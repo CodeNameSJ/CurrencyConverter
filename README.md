@@ -1,18 +1,31 @@
-## Getting Started
+# CurrencyConverter
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Simple Java CLI tool to convert currencies using [ExchangeRate-API](https://www.exchangerate-api.com/).
 
-## Folder Structure
+## Features
 
-The workspace contains two folders by default, where:
+- Uses Java 21+ features (records, pattern matching, HttpClient)
+- Fetches live exchange rates via ExchangeRate-API
+- Applies transaction fee percentage
+- Targets multiple currencies in one run
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Setup
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Get an API key from https://www.exchangerate-api.com
+2. Set environment variable `EXCHANGE_API_KEY`
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+   ```bash
+   export EXCHANGE_API_KEY=your_api_key_here
+   ```
 
-## Dependency Management
+## Build with Maven:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+   ```bash
+   mvn clean compile
+   ```
+
+## Run:
+
+   ```bash
+   mvn exec:java -Dexec.mainClass="org.CurrencyConverter.CurrencyConverter"
+   ```
