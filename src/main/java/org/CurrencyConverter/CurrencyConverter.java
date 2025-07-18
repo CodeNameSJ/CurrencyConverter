@@ -1,16 +1,19 @@
 package org.CurrencyConverter;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
-import java.util.*;
-
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.reflect.TypeToken;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 public class CurrencyConverter {
 	final static String APIKEY = "YOUR-API-KEY";
@@ -20,7 +23,6 @@ public class CurrencyConverter {
 
 	static void main(String[] ignoredArgs) throws Exception {
 		Scanner sc = new Scanner(System.in);
-
 		System.out.print("Enter amount: ");
 		double amount = sc.nextDouble();
 		sc.nextLine();
@@ -29,7 +31,7 @@ public class CurrencyConverter {
 		String base = sc.nextLine().trim().toUpperCase();
 
 		if (base.length() != 3) {
-			System.out.println("Invalid base currency. Use ISO 4217 format like USD.");
+			System.out.println("Invalid base currency. Use format like USD.");
 			return;
 		}
 
@@ -61,7 +63,7 @@ public class CurrencyConverter {
 	}
 
 	private static ExchangeRateResponse fetchRates(String base) throws IOException {
-		String urlStr = STR."https://v6.exchangerate-api.com/v6/{apiKey}/latest/{base}";
+		String urlStr = "https://v6.exchangerate-api.com/v6/" + APIKEY + "latest/" + base;
 		URI uri = URI.create(urlStr);
 		URL url = uri.toURL();
 
