@@ -13,7 +13,8 @@ from [ExchangeRate-API](https://www.exchangerate-api.com).
 
 ## 🪧 Demo
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4759da84-e986-4bcf-9823-1389fa83a078" />
+<img width="432" height="275" alt="Screenshot 2025-07-18 155018" src="https://github.com/user-attachments/assets/ae42b07a-da6f-44cd-b1f2-0d64f5e2b6a9" />
+
 
 
 ## 🛠 Tech Stack
