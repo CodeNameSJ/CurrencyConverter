@@ -13,12 +13,8 @@ from [ExchangeRate-API](https://www.exchangerate-api.com).
 
 ## 🪧 Demo
 
-Enter amount: 100
-Base currency (e.g., USD): USD
-Target currencies (comma-separated, e.g., INR,EUR): INR,EUR
-Transaction fee % (or blank for 2): 1
-INR: 8295.70
-EUR: 90.71
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4759da84-e986-4bcf-9823-1389fa83a078" />
+
 
 ## 🛠 Tech Stack
 
