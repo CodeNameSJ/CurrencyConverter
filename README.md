@@ -46,8 +46,8 @@ cd CurrencyConverterJava24
 ### 2. Compile and run (manual way)
 
 ```bash
-javac -cp ".;lib/gson-2.10.1.jar" -d out src/main/java/org/currencyconverter/CurrencyConverter.java
-java -cp ".;lib/gson-2.10.1.jar;out" org.currencyconverter.CurrencyConverter
+javac -cp ".;lib/gson-2.13.1.jar" -d out src/main/java/org/currencyconverter/CurrencyConverter.java
+java -cp ".;lib/gson-2.13.1.jar;out" org.currencyconverter.CurrencyConverter
 ```
 
 ### 3. Or use Maven
