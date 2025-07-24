@@ -28,7 +28,7 @@ from [ExchangeRate-API](https://www.exchangerate-api.com).
 
 ## 📦 Setup Instructions
 
-## 🔐 API Key
+### 🔐 API Key
 
 Replace `"YOUR-API-KEY"` in `CurrencyConverter.java` with your own
 from [ExchangeRate-API](https://www.exchangerate-api.com).
